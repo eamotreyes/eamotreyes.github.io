@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丝蒂奇十字绣-绣图选购、入门教程与图案搭配指南</title>
+<meta name="description" content="丝蒂奇十字绣专题页，介绍十字绣绣图分类、入门工具、绣线配色、常见针法与选购要点，帮助新手和有经验的绣友找到合适的图案与绣制方法。">
+<meta name="keywords" content="丝蒂奇十字绣,十字绣绣图,十字绣入门,十字绣教程,十字绣工具,十字绣图案">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --main:#8c3b5a;
+    --main-light:#b25a78;
+    --accent:#c99a3d;
+    --bg:#fdf8f4;
+    --card:#ffffff;
+    --text:#332a2e;
+    --text-soft:#6d6068;
+    --line:#ecdfe4;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px;}
+
+  /* 顶部 */
+  header.site-header{
+    background:linear-gradient(135deg,#7d2f4d 0%,#a9486a 100%);
+    color:#fff;
+    padding:14px 0;
+    position:sticky;
+    top:0;
+    z-index:50;
+    box-shadow:0 2px 12px rgba(120,40,70,.25);
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  .logo-mark{
+    width:34px;height:34px;
+    border-radius:9px;
+    background:#fff;
+    color:var(--main);
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;font-weight:800;
+  }
+  nav.main-nav ul{
+    display:flex;
+    gap:6px;
+    list-style:none;
+    flex-wrap:wrap;
+  }
+  nav.main-nav a{
+    display:block;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:15px;
+    transition:.25s;
+  }
+  nav.main-nav a:hover{
+    background:rgba(255,255,255,.18);
+  }
+
+  /* 首屏 */
+  .hero{
+    background:
+      radial-gradient(circle at 12% 20%,rgba(201,154,61,.18),transparent 55%),
+      radial-gradient(circle at 88% 80%,rgba(140,59,90,.16),transparent 55%),
+      #fffaf6;
+    border-bottom:1px solid var(--line);
+    padding:56px 0 48px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:44px;
+    align-items:center;
+  }
+  .hero h1{
+    font-size:36px;
+    line-height:1.35;
+    margin-bottom:16px;
+    color:#5f2338;
+  }
+  .hero h1 span{color:var(--accent);}
+  .hero p.lead{
+    font-size:17px;
+    color:var(--text-soft);
+    margin-bottom:22px;
+    max-width:560px;
+  }
+  .hero-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:26px;
+  }
+  .hero-tags span{
+    background:#fff;
+    border:1px solid var(--line);
+    color:var(--main);
+    font-size:13.5px;
+    padding:5px 13px;
+    border-radius:20px;
+  }
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;
+    padding:12px 26px;
+    border-radius:26px;
+    font-size:15.5px;
+    font-weight:600;
+    transition:.25s;
+    cursor:pointer;
+    border:none;
+  }
+  .btn-primary{
+    background:var(--main);
+    color:#fff;
+    box-shadow:0 6px 16px rgba(140,59,90,.28);
+  }
+  .btn-primary:hover{background:#752f4a;transform:translateY(-2px);}
+  .btn-ghost{
+    background:#fff;
+    color:var(--main);
+    border:1px solid var(--main-light);
+  }
+  .btn-ghost:hover{background:#fbeef2;}
+
+  /* 绣样示意卡（纯CSS绘制） */
+  .stitch-board{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px;
+    box-shadow:0 10px 30px rgba(140,59,90,.10);
+  }
+  .stitch-board h3{
+    font-size:15px;
+    color:var(--text-soft);
+    font-weight:600;
+    margin-bottom:16px;
+    letter-spacing:.5px;
+  }
+  .grid-canvas{
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    gap:5px;
+    margin-bottom:18px;
+  }
+  .grid-canvas i{
+    display:block;
+    padding-top:100%;
+    border-radius:4px;
+    background:#f6e9ee;
+  }
+  .grid-canvas i.c1{background:#c2566f;}
+  .grid-canvas i.c2{background:#e0a8bb;}
+  .grid-canvas i.c3{background:#c99a3d;}
+  .grid-canvas i.c4{background:#8c3b5a;}
+  .grid-canvas i.c5{background:#f3d9a4;}
+  .stitch-board p{
+    font-size:14px;
+    color:var(--text-soft);
+  }
+
+  /* 通用区块 */
+  section{padding:56px 0;}
+  .section-head{
+    margin-bottom:32px;
+  }
+  .section-head h2{
+    font-size:26px;
+    color:#5f2338;
+    margin-bottom:10px;
+    position:relative;
+    padding-left:16px;
+  }
+  .section-head h2::before{
+    content:"";
+    position:absolute;
+    left:0;top:50%;
+    transform:translateY(-50%);
+    width:5px;height:22px;
+    border-radius:3px;
+    background:var(--accent);
+  }
+  .section-head p{
+    color:var(--text-soft);
+    font-size:15.5px;
+    max-width:820px;
+  }
+
+  /* 绣图分类 */
+  .cat-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+  }
+  .cat-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:24px 22px;
+    transition:.25s;
+  }
+  .cat-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 26px rgba(140,59,90,.13);
+    border-color:#e3c4d0;
+  }
+  .cat-icon{
+    width:44px;height:44px;
+    border-radius:12px;
+    background:#fbeef2;
+    color:var(--main);
+    display:flex;align-items:center;justify-content:center;
+    font-size:20px;
+    margin-bottom:14px;
+    font-weight:700;
+  }
+  .cat-card h3{
+    font-size:17.5px;
+    margin-bottom:8px;
+    color:#4d1e2f;
+  }
+  .cat-card p{
+    font-size:14.5px;
+    color:var(--text-soft);
+  }
+
+  /* 入门步骤 */
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:0;
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid var(--line);
+    background:#fff;
+  }
+  .step{
+    padding:26px 22px;
+    border-right:1px solid var(--line);
+    position:relative;
+  }
+  .step:last-child{border-right:none;}
+  .step .num{
+    font-size:13px;
+    font-weight:700;
+    color:var(--accent);
+    letter-spacing:1px;
+    margin-bottom:10px;
+  }
+  .step h3{
+    font-size:16.5px;
+    margin-bottom:8px;
+    color:#4d1e2f;
+  }
+  .step p{
+    font-size:14.5px;
+    color:var(--text-soft);
+  }
+
+  /* 工具与材料 */
+  .tool-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .tool-box{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px 24px;
+  }
+  .tool-box h3{
+    font-size:18px;
+    color:#4d1e2f;
+    margin-bottom:14px;
+    padding-bottom:12px;
+    border-bottom:1px dashed var(--line);
+  }
+  .tool-list{list-style:none;}
+  .tool-list li{
+    padding:9px 0 9px 22px;
+    position:relative;
+    font-size:15px;
+    color:var(--text-soft);
+    border-bottom:1px solid #f7f0f3;
+  }
+  .tool-list li:last-child{border-bottom:none;}
+  .tool-list li::before{
+    content:"";
+    position:absolute;
+    left:2px;top:17px;
+    width:8px;height:8px;
+    border-radius:2px;
+    background:var(--main-light);
+    transform:rotate(45deg);
+  }
+  .tool-list li strong{color:var(--text);}
+
+  /* 配色建议 */
+  .color-strip{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:8px;
+  }
+  .color-chip{
+    flex:1 1 150px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:16px;
+    text-align:center;
+  }
+  .color-chip .swatch{
+    height:44px;
+    border-radius:8px;
+    margin-bottom:12px;
+  }
+  .color-chip h4{
+    font-size:15px;
+    color:#4d1e2f;
+    margin-bottom:6px;
+  }
+  .color-chip p{
+    font-size:13.5px;
+    color:var(--text-soft);
+  }
+
+  /* 选购建议 */
+  .buy-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+  }
+  .buy-card{
+    background:#fff;
+    border-left:4px solid var(--main-light);
+    border-radius:10px;
+    padding:22px 20px;
+    box-shadow:0 4px 14px rgba(140,59,90,.06);
+  }
+  .buy-card h3{
+    font-size:16.5px;
+    color:#4d1e2f;
+    margin-bottom:8px;
+  }
+  .buy-card p{
+    font-size:14.5px;
+    color:var(--text-soft);
+  }
+
+  /* FAQ */
+  .faq-list{
+    display:grid;
+    gap:14px;
+  }
+  details.faq{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:18px 22px;
+    transition:.2s;
+  }
+  details.faq[open]{
+    border-color:#e3c4d0;
+    box-shadow:0 6px 18px rgba(140,59,90,.08);
+  }
+  details.faq summary{
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    color:#4d1e2f;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  details.faq summary::-webkit-details-marker{display:none;}
+  details.faq summary::after{
+    content:"+";
+    font-size:20px;
+    color:var(--main-light);
+    font-weight:400;
+    flex-shrink:0;
+  }
+  details.faq[open] summary::after{content:"−";}
+  details.faq p{
+    margin-top:12px;
+    font-size:14.8px;
+    color:var(--text-soft);
+    border-top:1px dashed var(--line);
+    padding-top:12px;
+  }
+
+  /* 侧栏与主体组合 */
+  .main-aside{
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:32px;
+    align-items:start;
+  }
+  aside.sidebar{
+    display:grid;
+    gap:20px;
+  }
+  .side-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 20px;
+  }
+  .side-card h3{
+    font-size:16.5px;
+    color:#4d1e2f;
+    margin-bottom:14px;
+    padding-bottom:10px;
+    border-bottom:1px solid var(--line);
+  }
+  .side-card ul{list-style:none;}
+  .side-card li{
+    font-size:14.5px;
+    color:var(--text-soft);
+    padding:8px 0;
+    border-bottom:1px solid #f7f0f3;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+  }
+  .side-card li:last-child{border-bottom:none;}
+  .side-card li span{color:var(--main);font-size:13px;flex-shrink:0;}
+  .side-card.tip{
+    background:linear-gradient(150deg,#fbeef2,#fff);
+    border-color:#edd3dd;
+  }
+  .side-card.tip p{
+    font-size:14.5px;
+    color:#6d4a58;
+  }
+
+  /* 页脚 */
+  footer.site-footer{
+    background:#4d1e2f;
+    color:#e8d3db;
+    padding:44px 0 26px;
+    margin-top:20px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:32px;
+    margin-bottom:30px;
+  }
+  .footer-grid h4{
+    font-size:16px;
+    color:#fff;
+    margin-bottom:14px;
+  }
+  .footer-grid p,
+  .footer-grid li{
+    font-size:14px;
+    color:#d3b3bf;
+    line-height:1.9;
+  }
+  .footer-grid ul{list-style:none;}
+  .footer-grid a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);
+    padding-top:20px;
+    font-size:13.5px;
+    color:#b9949f;
+    text-align:center;
+  }
+
+  /* 响应式 */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:32px;}
+    .main-aside{grid-template-columns:1fr;}
+    .tool-layout{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .hero h1{font-size:30px;}
+  }
+  @media (max-width:640px){
+    body{font-size:15.5px;}
+    section{padding:40px 0;}
+    .hero{padding:38px 0 34px;}
+    .hero h1{font-size:25px;}
+    .hero p.lead{font-size:15.5px;}
+    .section-head h2{font-size:22px;}
+    .steps{grid-template-columns:1fr;}
+    .step{border-right:none;border-bottom:1px solid var(--line);}
+    .step:last-child{border-bottom:none;}
+    .footer-grid{grid-template-columns:1fr;gap:24px;}
+    .header-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+    nav.main-nav ul{gap:2px;}
+    nav.main-nav a{padding:6px 10px;font-size:14px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="logo">
+      <span class="logo-mark">丝</span>
+      <span>丝蒂奇十字绣</span>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#categories">绣图分类</a></li>
+        <li><a href="#start">入门步骤</a></li>
+        <li><a href="#tools">工具材料</a></li>
+        <li><a href="#color">配色参考</a></li>
+        <li><a href="#choose">选购建议</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>丝蒂奇十字绣：<span>从选图到落针</span>的完整参考</h1>
+        <p class="lead">
+          十字绣是一种以网格为坐标、用交叉针法在绣布上逐格成画的刺绣方式。它上手门槛不高，却能在重复的针脚中慢慢显影出图案。这里围绕丝蒂奇十字绣，整理绣图类型、常用工具、配色思路与选购要点，方便刚接触的绣友快速理清头绪，也方便有经验的人按需查找。
+        </p>
+        <div class="hero-tags">
+          <span>绣图分类</span>
+          <span>新手工具</span>
+          <span>针法基础</span>
+          <span>配色搭配</span>
+          <span>选购参考</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#start">查看入门步骤</a>
+          <a class="btn btn-ghost" href="#choose">了解选购要点</a>
+        </div>
+      </div>
+      <div class="stitch-board" aria-hidden="true">
+        <h3>绣布网格示意</h3>
+        <div class="grid-canvas">
+          <i class="c1"></i><i></i><i class="c2"></i><i class="c3"></i><i></i><i class="c1"></i><i class="c5"></i><i></i>
+          <i></i><i class="c4"></i><i class="c1"></i><i></i><i class="c2"></i><i></i><i class="c3"></i><i class="c1"></i>
+          <i class="c3"></i><i></i><i class="c5"></i><i class="c1"></i><i></i><i class="c4"></i><i></i><i class="c2"></i>
+          <i class="c2"></i><i class="c1"></i><i></i><i class="c3"></i><i class="c5"></i><i></i><i class="c1"></i><i></i>
+          <i></i><i class="c5"></i><i class="c2"></i><i></i><i class="c1"></i><i class="c3"></i><i></i><i class="c4"></i>
+          <i class="c1"></i><i></i><i class="c3"></i><i class="c2"></i><i></i><i class="c1"></i><i class="c5"></i><i></i>
+        </div>
+        <p>每一格代表一个针位，颜色对应绣线编号。按图逐格落针，图案会逐步成型。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 绣图分类 -->
+  <section id="categories">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见的十字绣绣图类型</h2>
+        <p>绣图题材决定了整幅作品的观感和绣制周期。不同主题在尺寸、颜色数量与细节密度上差别较大，挑选时可结合自己的耐心程度和用途来判断。</p>
+      </div>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <div class="cat-icon">花</div>
+          <h3>花卉植物</h3>
+          <p>以玫瑰、牡丹、向日葵、绿植等为主，颜色层次丰富，适合做成挂画或装饰摆件，是较常见的入门题材。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">景</div>
+          <h3>风景建筑</h3>
+          <p>山水、古镇、欧式街景等，画面信息量大，色块过渡多，通常需要较长的绣制时间，适合有耐心的绣友。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">萌</div>
+          <h3>卡通动物</h3>
+          <p>造型简洁、色块分明，针位规律性强，适合新手练习，也常被用来制作抱枕、杯垫等小物件。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">字</div>
+          <h3>文字祝福</h3>
+          <p>福字、囍字、祝福语等，配色以红金为主，常用于节庆、乔迁或婚庆场合，寓意明确。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">人</div>
+          <h3>人物肖像</h3>
+          <p>对色阶过渡要求较高，肤色与阴影处理是关键，建议有一定基础后再尝试，成品适合作为纪念性作品。</p>
+        </article>
+        <article class="cat-card">
+          <div class="cat-icon">小</div>
+          <h3>小件实用款</h3>
+          <p>书签、钥匙扣、卡套等，图案小、周期短，适合利用零散时间完成，也方便作为手作礼物。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 入门步骤 -->
+  <section id="start" style="background:#fff;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>十字绣入门的基本步骤</h2>
+        <p>十字绣的流程并不复杂，关键是把准备工作做足，再按顺序推进，可以减少返工和绣线浪费。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">STEP 01</div>
+          <h3>选定绣图与绣布</h3>
+          <p>先确定图案用途和成品尺寸，再根据绣图说明选择对应规格的绣布。布目数不同，成品大小会有明显差异。</p>
+        </div>
+        <div class="step">
+          <div class="num">STEP 02</div>
+          <h3>准备绣线与工具</h3>
+          <p>核对绣线色号是否齐全，准备好绣针、绣绷、剪刀、水溶笔等。线量不足时尽量提前补齐同一批号。</p>
+        </div>
+        <div class="step">
+          <div class="num">STEP 03</div>
+          <h3>定位中心与起针</h3>
+          <p>将绣布对折找出中心点，与图纸中心标记对齐，从中间区域开始绣，可降低整体偏移的风险。</p>
+        </div>
+        <div class="step">
+          <div class="num">STEP 04</div>
+          <h3>分区推进与收尾</h3>
+          <p>按颜色或区块分批绣制，完成后清洗、熨烫并装裱。绣线不要拉得过紧，以免布面变形。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工具材料 + 配色 -->
+  <section id="tools">
+    <div class="wrap main-aside">
+      <div>
+        <div class="section-head">
+          <h2>工具与材料说明</h2>
+          <p>十字绣用到的材料和工具有限，但每一项都会影响绣制手感与成品效果，选购时不必追求昂贵，合适更重要。</p>
+        </div>
+        <div class="tool-layout">
+          <div class="tool-box">
+            <h3>基础材料</h3>
+            <ul class="tool-list">
+              <li><strong>绣布：</strong>常见为棉质十字绣布，按每英寸格数区分规格，格数越大图案越细腻。</li>
+              <li><strong>绣线：</strong>多为棉质股线，通常取其中若干股使用，具体股数以绣图说明为准。</li>
+              <li><strong>绣图：</strong>纸质或电子图纸，标注色号、符号与针位，是绣制的核心依据。</li>
+              <li><strong>绣针：</strong>十字绣针针头较钝、针孔较大，便于穿多股线且不易扎破布面。</li>
+            </ul>
+          </div>
+          <div class="tool-box">
+            <h3>辅助工具</h3>
+            <ul class="tool-list">
+              <li><strong>绣绷或绣架：</strong>保持布面平整绷紧，减少针脚松紧不一的情况。</li>
+              <li><strong>水溶笔或划粉：</strong>用于在布面做定位标记，完成后按说明清洗去除。</li>
+              <li><strong>小剪刀：</strong>刀口细尖，方便贴近布面剪断线头。</li>
+              <li><strong>绕线板与收纳盒：</strong>按色号整理绣线，避免打结和串色，也便于中途暂停。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="side-card tip">
+          <h3>新手小提示</h3>
+          <p>刚开始不必选大幅复杂图，先用小尺寸、颜色少的图案熟悉针法走向和收线方式，再逐步增加难度，绣起来会更从容。</p>
+        </div>
+        <div class="side-card">
+          <h3>绣制节奏参考</h3>
+          <ul>
+            <li>小件图案 <span>数小时至数天</span></li>
+            <li>中型挂画 <span>数周</span></li>
+            <li>大幅风景 <span>数月不等</span></li>
+            <li>建议单次时长 <span>30–60分钟</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 配色 -->
+  <section id="color" style="background:#fff;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>配色思路参考</h2>
+        <p>十字绣的成品效果很大程度取决于颜色关系。除了严格按图纸色号，也可以在局部做适度调整，让作品更贴合摆放环境。</p>
+      </div>
+      <div class="color-strip">
+        <div class="color-chip">
+          <div class="swatch" style="background:linear-gradient(135deg,#c2566f,#8c3b5a);"></div>
+          <h4>暖红系</h4>
+          <p>喜庆、饱满，常见于节庆与祝福题材，适合搭配米白或浅金底色。</p>
+        </div>
+        <div class="color-chip">
+          <div class="swatch" style="background:linear-gradient(135deg,#7fa87f,#3f6b52);"></div>
+          <h4>自然绿系</h4>
+          <p>清新耐看，多用于植物与田园风景，深浅层次能增强画面纵深。</p>
+        </div>
+        <div class="color-chip">
+          <div class="swatch" style="background:linear-gradient(135deg,#8fb6d9,#3f6a94);"></div>
+          <h4>冷蓝系</h4>
+          <p>安静克制，适合海景、雪景与简约风格，与白色绣布对比柔和。</p>
+        </div>
+        <div class="color-chip">
+          <div class="swatch" style="background:linear-gradient(135deg,#e2c98f,#b98f3f);"></div>
+          <h4>金棕系</h4>
+          <p>温润复古，常用于古典纹样与秋景，可与暗红搭配提升质感。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选购建议 -->
+  <section id="choose">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>选购十字绣的几点建议</h2>
+        <p>市面上的十字绣套件种类繁多，价格和配置差异较大。与其只看图案好不好看，不如先确认几个实际影响体验的细节。</p>
+      </div>
+      <div class="buy-grid">
+        <article class="buy-card">
+          <h3>确认套件包含内容</h3>
+          <p>留意是否含绣布、绣线、绣针、图纸和说明。部分产品只售图纸，材料需另配，购买前看清描述可避免重复采购。</p>
+        </article>
+        <article class="buy-card">
+          <h3>核对绣线色号与数量</h3>
+          <p>颜色较多的图案对线量要求更高，可先确认色号标注是否清晰、线量是否留有余量，方便中途补线时对色。</p>
+        </article>
+        <article class="buy-card">
+          <h3>关注绣布规格</h3>
+          <p>同一张图纸配不同规格绣布，成品尺寸会不同。若打算装进现成相框，建议先按目标尺寸反推绣布规格。</p>
+        </article>
+        <article class="buy-card">
+          <h3>图纸清晰度很重要</h3>
+          <p>符号密集的图纸若印刷模糊，绣制时极易看错格。可优先选择符号区分明显、分区标注清楚的版本。</p>
+        </article>
+        <article class="buy-card">
+          <h3>按用途选难度</h3>
+          <p>日常练手可选小图或卡通题材；作为礼物或装饰，再考虑风景、人物等细节更丰富的图案。</p>
+        </article>
+        <article class="buy-card">
+          <h3>理性看待成品宣称</h3>
+          <p>关于绣制时长、成品效果等描述，不同人的熟练度差异较大，可将其作为大致参考，而非绝对标准。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#fff;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>整理了几个十字绣过程中较常被问到的问题，供参考。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>完全没接触过十字绣，可以自己学会吗？</summary>
+          <p>可以。十字绣的基本针法只有交叉针、半针和回针等几种，规律性强，通过图纸说明和基础教程就能上手。建议从颜色少、面积小的图案开始，先熟悉起针、收线和换线，再挑战复杂图。</p>
+        </details>
+        <details class="faq">
+          <summary>绣线用几股比较合适？</summary>
+          <p>这取决于绣布规格和图纸要求。一般来说，布目数越小，需要的股数越多，以覆盖布面空隙。具体股数应以所购套件的说明为准，不建议自行随意增减，否则成品饱满度会与预期不同。</p>
+        </details>
+        <details class="faq">
+          <summary>绣错了怎么处理？</summary>
+          <p>如果发现得早，可以小心拆掉重绣。拆线时用针尖轻挑，避免划伤布面或让绣线起毛。若只是个别针位偏差且不影响整体观感，也可根据图案实际情况判断是否保留。</p>
+        </details>
+        <details class="faq">
+          <summary>绣好的作品怎么清洗和保存？</summary>
+          <p>一般可用中性洗涤剂在常温水中轻柔手洗，不要用力搓揉或拧干，洗后平铺阴干。装裱前可低温熨烫背面。长期保存应避免潮湿和强光直射，以免绣线褪色或布面泛黄。</p>
+        </details>
+        <details class="faq">
+          <summary>绣布上的水溶笔痕迹洗不掉怎么办？</summary>
+          <p>多数水溶笔痕迹用清水即可去除。若残留，可先用常温清水浸泡一段时间再轻洗，避免使用热水或强力清洁剂。购买时也可留意产品标注的去除方式，按说明操作更稳妥。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>丝蒂奇十字绣</h4>
+        <p>围绕十字绣的绣图分类、工具材料、配色思路与选购要点整理参考内容，帮助不同阶段的绣友找到适合自己的图案与绣制方式。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#categories">绣图分类</a></li>
+          <li><a href="#start">入门步骤</a></li>
+          <li><a href="#tools">工具材料</a></li>
+          <li><a href="#color">配色参考</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>实用参考</h4>
+        <ul>
+          <li><a href="#choose">选购建议</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#start">新手起步</a></li>
+          <li><a href="#tools">绣线收纳</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>本页内容为十字绣相关知识整理，具体材料规格与绣制方法请以实际产品说明为准。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 平滑滚动，兼顾顶部固定导航的偏移
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = this.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var offset = document.querySelector('.site-header').offsetHeight + 12;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({top: top, behavior: 'smooth'});
+    });
+  });
+</script>
+
+</body>
+  </html>
